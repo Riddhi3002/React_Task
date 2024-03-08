@@ -1,0 +1,89 @@
+.sign,.login,.profile,.Update,.hooksDemo,.calc,.calculator,.colorChangeDemo,.counter,.stateDemo,.home,.about,.contact{
+    margin: 20px 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: chocolate;
+    margin-left: 0px;
+}
+.box{
+    border: 2px solid black;
+    padding: 20px 50px;
+}
+form{
+    border: 3px solid rgb(16, 16, 17);
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px 80px;
+}
+input[type=text],input[type=number],input[type=email],input[type=password]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #f8dab9;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+input[type=submit]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #e9cc58;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+select{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid wheat;
+    box-sizing: border-box;
+    font-size: 35px;
+
+}
+#get{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #0f0f0f;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+input[type=button],button{
+    padding: 15px 50px;
+    margin: 5px 25px;
+    font-size: 20px;
+    background-color: rgb(231, 222, 210);
+    border: 1px solid rgb(5, 5, 5);
+    border-radius: 5px;
+   
+}
+
+h2{
+    margin-left: 100px;
+}
+.count{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px 50px;
+    margin-right: 1000px;
+    display: flex;
+    margin-left: 300px;
+    font-size: 45px;
+    justify-content: center;
+}
+.count1{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px 50px;
+    margin-right: 1000px;
+    display: flex;
+    margin-left: 200px;
+    font-size: 45px;
+    justify-content: center;
+}
