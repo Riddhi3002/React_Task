@@ -1,9 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function ToDoList() {
+function Todolist_Ls() {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState('');
   const [editIndex, setEditIndex] = useState(null);
+
+  // Load todos from localStorage on component mount
+  useEffect(() => {
+    const savedTodos = JSON.parse(localStorage.getItem('todos'));
+    if (savedTodos) {
+      setTodos(savedTodos);
+    }
+  }, []);
+
+  // Save todos to localStorage whenever todos state changes
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
 
   const addTodo = () => {
     if (inputValue.trim() !== '') {
@@ -31,7 +44,7 @@ function ToDoList() {
 
   return (
     <div>
-      <h1>To-Do List</h1>
+      <h1>To-Do List With localStorage</h1>
       <input
         type="text"
         value={inputValue}
@@ -40,7 +53,7 @@ function ToDoList() {
       <button onClick={addTodo}>{editIndex !== null ? 'Edit' : 'Add'}</button>
       <ul>
         {todos.map((todo, index) => (
-          <li key={index} className='todo'>
+          <li key={index}>
             {todo}
             <button onClick={() => editTodo(index)}>Edit</button>
             <button onClick={() => deleteTodo(index)}>Delete</button>
@@ -51,4 +64,4 @@ function ToDoList() {
   );
 }
 
-export default ToDoList;
+export default Todolist_Ls;
