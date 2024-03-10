@@ -14,6 +14,9 @@ import Update from './Update';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import ToDoList from './TodoList';
+import Todolist_Ls from './Todolist_Ls';
+
 
 function App() {
     return ( <div >
@@ -32,6 +35,8 @@ function App() {
             <Link to="/Home" className="home">Home</Link>
             <Link to="/About" className="about">About</Link>
             <Link to="/Contact" className="contact">Contact</Link>
+	    <Link to="/TodoList" className='todolist'>TodoList</Link>
+            <Link to="/Todolist_Ls" className='todolist_ls'>Todolist_Ls</Link>
             </div>
 			<Routes>
 				<Route path="/HooksDemo" element={<HooksDemo />}/>
@@ -47,6 +52,8 @@ function App() {
                 <Route path="/Home" element={<Home/>} />
                 <Route path="/About" element={<About/>} />
                 <Route path="/Contact" element={<Contact/>} />
+	<Route path='/TodoList' element={<ToDoList/>}/>
+                <Route path='/Todolist_Ls' element={<Todolist_Ls/>}/>
 			</Routes>			
 		</Router>
 		</div>);
