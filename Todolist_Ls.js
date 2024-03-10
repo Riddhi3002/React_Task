@@ -53,7 +53,7 @@ function Todolist_Ls() {
       <button onClick={addTodo}>{editIndex !== null ? 'Edit' : 'Add'}</button>
       <ul>
         {todos.map((todo, index) => (
-          <li key={index}>
+          <li key={index} className='todo'>
             {todo}
             <button onClick={() => editTodo(index)}>Edit</button>
             <button onClick={() => deleteTodo(index)}>Delete</button>
