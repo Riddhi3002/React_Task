@@ -1,9 +1,10 @@
-.sign,.login,.profile,.Update,.hooksDemo,.calc,.calculator,.colorChangeDemo,.counter,.stateDemo,.home,.about,.contact,.todolist,.todolist_ls{
+.sign,.login,.profile,.Update,.hooksDemo,.calc,.calculator,.colorChangeDemo,.counter,.stateDemo,.home,.about,.contact,.todolist,.todolist_ls,.valid,.valid_Ls{
     margin: 20px 5px;
     text-decoration: none;
     font-size: 25px;
     color: chocolate;
     margin-left: 0px;
+    display: inline-flex;
 }
 .box{
     border: 2px solid black;
