@@ -16,6 +16,8 @@ import About from './About';
 import Contact from './Contact';
 import ToDoList from './TodoList';
 import Todolist_Ls from './Todolist_Ls';
+import Validation from './Validation_form';
+import ValidLs from './Validation_LocalStorage';
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
             <Link to="/Contact" className="contact">Contact</Link>
 	    <Link to="/TodoList" className='todolist'>TodoList</Link>
             <Link to="/Todolist_Ls" className='todolist_ls'>Todolist_Ls</Link>
+	     <Link to="/Validation_forms" className='valid'>Validation_form</Link>
+            <Link to="/Validation_LocalStorage" className='valid_Ls'>Validation_LocalStorage</Link>
             </div>
 			<Routes>
 				<Route path="/HooksDemo" element={<HooksDemo />}/>
@@ -54,6 +58,8 @@ function App() {
                 <Route path="/Contact" element={<Contact/>} />
 	<Route path='/TodoList' element={<ToDoList/>}/>
                 <Route path='/Todolist_Ls' element={<Todolist_Ls/>}/>
+	 <Route path='/Validation_forms' element={<Validation/>}/>
+                <Route path='/Validation_LocalStorage' element={<ValidLs/>}/>
 			</Routes>			
 		</Router>
 		</div>);
