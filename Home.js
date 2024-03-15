@@ -1,5 +1,5 @@
 import React from "react";
-import "./Components/home.css"
+// import "./Components/home.css"
 //Home Page
 function Home() {
     return ( <div className="con">
